@@ -1,0 +1,22 @@
+Creating a Virtual Environment:
+    command: python -m venv .venv (this will create a venv named .venv, you can change the last word to whatever name you want to give your virtual environment)
+    for mac users: python3 - m venv .venv
+
+    alternative approach: create a virtual environment using the VS Code buttons:
+        click on "select kernel" or the python environment at the top right corner of your notebook
+        click "select another kernel" > "python environments" > "create python environment" > venv
+
+Placing your venv in the folder above where your git repo is stored prevents it from being included in your git repo (you would rather not push your venv to your repo). Alternatively, you can add your venv to the gitignore file.
+
+Activating a Virtual Environment:
+    Your Windows security setting might be blocking scripts (you'll see a red error message to this effect)
+        If so: search in your Windows search bar for the word "Scripts" and choose "allow local powershell scripts to run without signing" or the Dutch equivalent to this.
+        Click the button to allow scripts to run and try again.
+
+Choosing a kernel for your notebook to run:
+    Note: if you can't select a kernel when running your Jupyter notebook:
+        you might need to install extensions first
+        you might be working a folder level above where your virtual environment is contained, trying File > Open Folder and navigate to the folder where you virtual environment is located
+            e.g. if your course-labs folder contains a folder named for your venv and also a folder called labs, open course-labs. If your folder labs contains a folder with the name of your venv, open labs.
+
+You have a quiz on Monday: (+Q_5ZN@zJg6
